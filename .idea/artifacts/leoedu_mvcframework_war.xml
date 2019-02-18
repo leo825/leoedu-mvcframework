@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="leoedu-mvcframework:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="mvcframework-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="leoedu-mvcframework:war exploded" />
+    </root>
+  </artifact>
+</component>
