@@ -82,8 +82,6 @@ public class MyDispatcherServlet extends HttpServlet {
             fis = this.getClass().getClassLoader().getResourceAsStream(location);
             //读取配置文件
             p.load(fis);
-            //p.setProperty("scanPackage", "com.leoedu.demo");
-            System.out.println(p.getProperty("scanPackage"));
         } catch (Exception e) {
             e.printStackTrace();
         } finally {

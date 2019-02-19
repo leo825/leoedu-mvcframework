@@ -21,12 +21,21 @@ public class DemoAction {
     private IDemoService demoService;
 
     @MyRequestMapping("/query.json")
-    public void query(HttpServletRequest req,HttpServletResponse resp,@MyRequestParam("name")String name){
-
+    public void query(HttpServletRequest req, HttpServletResponse resp, @MyRequestParam("name") String name) {
         String result = demoService.get(name);
-        try{
+        try {
             resp.getWriter().write(result);
-        }catch (IOException e){
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    @MyRequestMapping("/get.json")
+    public void get(HttpServletRequest req, HttpServletResponse resp, @MyRequestParam("name") String name) {
+        String result = demoService.get(name);
+        try {
+            resp.getWriter().write(result);
+        } catch (IOException e) {
             e.printStackTrace();
         }
     }
