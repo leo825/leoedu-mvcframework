@@ -1,6 +1,6 @@
 package com.leoedu.demo.mvc.action;
 
-import com.leoedu.demo.service.IDemoService;
+import com.leoedu.demo.mvc.service.DemoService;
 import com.leoedu.mvcframework.annotation.MyAutowired;
 import com.leoedu.mvcframework.annotation.MyController;
 import com.leoedu.mvcframework.annotation.MyRequestMapping;
@@ -18,7 +18,7 @@ import java.io.IOException;
 public class DemoAction {
 
     @MyAutowired
-    private IDemoService demoService;
+    private DemoService demoService;
 
     @MyRequestMapping("/query.json")
     public void query(HttpServletRequest req, HttpServletResponse resp, @MyRequestParam("name") String name) {

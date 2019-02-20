@@ -6,6 +6,10 @@
         <element id="directory" name="classes">
           <element id="module-output" name="leoedu-mvcframework" />
         </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: cglib:cglib:2.2.2" />
+          <element id="library" level="project" name="Maven: asm:asm:3.3.1" />
+        </element>
       </element>
       <element id="directory" name="META-INF">
         <element id="file-copy" path="E:\WorkSpace\Git\leoedu-mvcframework\target/MANIFEST.MF" />
