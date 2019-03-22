@@ -21,12 +21,4 @@
         <url-pattern>/*</url-pattern>
     </servlet-mapping>
 
-    <locale-encoding-mapping-list>
-        <locale-encoding-mapping>
-            <locale>zh</locale>
-            <encoding>UTF-8</encoding>
-        </locale-encoding-mapping>
-    </locale-encoding-mapping-list>
-
-
 </web-app>
