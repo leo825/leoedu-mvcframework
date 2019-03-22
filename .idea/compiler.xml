@@ -25,5 +25,8 @@
         <module name="leoedu-mvcframework" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="leoedu-mvcframework" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>

@@ -110,6 +110,7 @@ public class MyDispatcherServlet extends HttpServlet {
                 doScanner(packageName + "." + file.getName());
             } else {
                 classNames.add(packageName + "." + file.getName().replace(".class", "").trim());
+                System.out.println(packageName + "." + file.getName().replace(".class", "").trim());
             }
         }
     }

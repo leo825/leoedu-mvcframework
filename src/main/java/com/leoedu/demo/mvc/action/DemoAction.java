@@ -22,8 +22,11 @@ public class DemoAction {
 
     @MyRequestMapping("/query.json")
     public void query(HttpServletRequest req, HttpServletResponse resp, @MyRequestParam("name") String name) {
-        String result = demoService.get(name);
         try {
+            String result = demoService.get(name);
+            req.setCharacterEncoding("utf-8");
+            resp.setContentType("text/html;charset=utf-8");
+            resp.setCharacterEncoding("utf-8");
             resp.getWriter().write(result);
         } catch (IOException e) {
             e.printStackTrace();
@@ -32,8 +35,11 @@ public class DemoAction {
 
     @MyRequestMapping("/get.json")
     public void get(HttpServletRequest req, HttpServletResponse resp, @MyRequestParam("name") String name) {
-        String result = demoService.get(name);
         try {
+            String result = demoService.get(name);
+            req.setCharacterEncoding("utf-8");
+            resp.setContentType("text/html;charset=utf-8");
+            resp.setCharacterEncoding("utf-8");
             resp.getWriter().write(result);
         } catch (IOException e) {
             e.printStackTrace();
